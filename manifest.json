@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Skipper",
+  "version": "1.0",
+
+  "description": "Bypasses YouTube ads and accelerates video playback beyond x2 speed, even on platforms lacking an explicit feature for such enhancements, including popular video player websites such as YouTube and Microsoft Stream.",
+
+  "icons": {
+    "48": "icons/skipper-icon.ico"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["skipper.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
