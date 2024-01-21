@@ -3,17 +3,19 @@
   "name": "Skipper",
   "version": "1.0",
 
-  "description": "Bypasses YouTube ads and accelerates video playback beyond x2 speed, even on platforms lacking an explicit feature for such enhancements, including popular video player websites such as YouTube and Microsoft Stream.",
-
+  "description": "Speedup YouTube ads and accelerate video playback beyond x2 speed, even on platforms lacking an explicit feature for such enhancements, including popular video player websites such as YouTube and Microsoft Stream.",
+  "homepage_url": "https://github.com/omarelshopky/skipper",
   "icons": {
     "48": "icons/skipper-icon.ico"
   },
 
-  "content_scripts": [
-    {
-      "matches": ["*://*/*"],
-      "js": ["skipper.js"],
-      "run_at": "document_idle"
-    }
-  ]
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/skipper-icon.ico",
+    "default_title": "Skipper",
+    "default_popup": "popup/skipper_options.html"
+  }
 }

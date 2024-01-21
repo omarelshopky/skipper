@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="skipper_options.css"/>
+  </head>
+
+  <body>
+    <div id="skipper__wrapper">
+      <div id="skipper__switch-btn-wrapper" class="skipper__switch-btn-wrapper--off">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+          <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+            <path d="M2370 5113 c-371 -35 -653 -114 -961 -269 -245 -122 -444 -268 -655
+            -478 -224 -225 -366 -423 -500 -701 -158 -326 -237 -650 -251 -1020 -15 -426
+            73 -832 263 -1214 133 -269 271 -459 488 -677 221 -220 412 -357 681 -489 188
+            -92 309 -137 500 -185 500 -126 1002 -102 1490 71 149 53 407 182 540 271 299
+            199 573 480 769 788 72 113 188 353 235 486 235 662 194 1372 -115 1993 -124
+            250 -263 447 -458 648 -216 224 -428 378 -711 518 -296 146 -572 225 -900 255
+            -102 9 -333 11 -415 3z m274 -1055 c55 -16 138 -99 154 -154 17 -58 17 -1359
+            0 -1415 -15 -51 -69 -114 -122 -141 -58 -31 -155 -31 -215 1 -54 28 -88 64
+            -112 116 -17 38 -19 81 -19 731 l0 690 26 52 c53 107 169 155 288 120z m-974
+            -288 c82 -43 134 -125 133 -215 0 -79 -18 -118 -93 -201 -162 -179 -262 -378
+            -301 -604 -17 -97 -17 -294 0 -390 121 -686 811 -1116 1481 -923 310 89 582
+            324 725 626 193 407 128 904 -161 1238 -104 120 -122 147 -133 200 -24 113 37
+            230 144 275 58 24 142 22 199 -5 133 -65 370 -416 460 -681 67 -200 80 -288
+            80 -535 0 -243 -12 -329 -75 -517 -269 -801 -1096 -1275 -1916 -1097 -606 131
+            -1099 603 -1252 1200 -43 167 -55 284 -48 477 11 322 98 593 275 858 74 110
+            198 254 245 283 70 43 165 48 237 11z"/>
+          </g>
+        </svg>
+        <button id="skipper__switch-btn"></button>
+      </div>
+      <div id="skipper__speed-selector-wrapper">
+        <span id="skipper__line-spacer"></span>
+        <label id="skipper__speed-selector-label" class="not-selectable disabled">Playback Speed</label>
+        <input id="skipper__speed-selector-input" type="number" list="playback-speeds" min="0" step="0.25" placeholder="Playback Speed" disabled>
+        <datalist id="playback-speeds"></datalist>
+        <span id="skipper__speed-selector-error" class="hidden not-selectable">enter a valid positive number</span>
+      </div>
+      <div id="skipper__error-overlay" class="hidden"></div>
+      <span id="skipper__error-modal" class="hidden"></span>
+    </div>
+
+    <script src="skipper_options.js"></script>
+  </body>
+</html>
